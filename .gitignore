@@ -28,6 +28,11 @@ docroot/themes/custom/*/node_modules
 docroot/themes/custom/*/css
 docroot/themes/custom/*/styleguide
 
+# Ignore cog so we can pull it in via git clone to work on it
+docroot/themes/custom/cog
+# Same for cog_tools
+docroot/modules/custom/cog_tools
+
 # Ignore build artifacts
 deployment_identifier
 /deploy

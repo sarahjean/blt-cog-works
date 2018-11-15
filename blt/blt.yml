@@ -1,12 +1,12 @@
 project:
   machine_name: blt-cog-works
-  prefix: BLT
-  human_name: 'BLTed 8'
+  prefix: BLT-COG
+  human_name: 'BLTed Cog'
   profile:
     name: lightning
   local:
     protocol: http
-    hostname: 'local.${project.machine_name}.com'
+    hostname: '${env.VIRTUAL_HOST}'
 git:
   default_branch: master
   remotes: {  }
@@ -34,3 +34,10 @@ modules:
   prod:
     enable: [acquia_connector, shield]
     uninstall: [devel, views_ui]
+drupal:
+  db:
+    database: default
+    username: user
+    password: user
+    host: db
+    port: 3306

@@ -5,7 +5,18 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "^9.2.0"
+        "acquia/blt": "^9.2.0",
+        "acquia/lightning": "~3.2.0",
+	    "acquia/drupal-spec-tool": "^2.0.0",
+	    "drupal/acquia_connector": "^1.5.0",
+	    "drupal/acquia_purge": "^1.0-beta3",
+	    "drupal/devel": "^1.0.0",
+	    "drupal/qa_accounts": "^1.0.0-alpha1",
+	    "drupal/memcache": "2.0-alpha7",
+	    "drupal/seckit": "^1.0.0-alpha2",
+	    "drupal/security_review": "*",
+	    "drupal/shield": "^1.0.0",
+	    "drupal/features": "^3.7.0"
     },
     "require-dev": {},
     "config": {
@@ -50,8 +61,7 @@
         },
         "merge-plugin": {
             "require": [
-                "blt/composer.required.json",
-                "blt/composer.suggested.json"
+                "blt/composer.required.json"
             ],
             "merge-extra": true,
             "merge-extra-deep": true,
