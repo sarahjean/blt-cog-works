@@ -20,6 +20,9 @@ services:
 
       # Commands that set up the basic preview infrastructure
       init:
+        # Link the document root to the expected path. This example links /web
+        # to the docroot
+        - ln -snf "${TUGBOAT_ROOT}/docroot" "${DOCROOT}"
 
         # Install prerequisite packages
         - apt-get update
